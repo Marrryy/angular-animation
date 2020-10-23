@@ -7,6 +7,7 @@ import { FadeInComponent } from './fade-in/fade-in.component';
 import { ImgAnimationComponent } from './img-animation/img-animation.component';
 import { ImgAnimation2Component } from './img-animation2/img-animation2.component';
 import { StackedImgComponent } from './stacked-img/stacked-img.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { StackedImgComponent } from './stacked-img/stacked-img.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
