@@ -1,0 +1,12 @@
+<!-- Name of Trigger animation and the string that parameters -->
+<div [@fadeInShow]="stateName">
+    <p><img src="assets/cover.jpg" alt="" width="200px"></p>
+    <p>
+        Welcome to NCT 2020
+    </p> 
+</div>
+
+
+<button (click)="toggle()">
+    <span>{{show ? "Close" : "What album NCT?"}}</span>
+</button>
