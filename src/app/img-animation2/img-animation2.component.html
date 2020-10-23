@@ -1,1 +1,13 @@
-<p>img-animation2 works!</p>
+<h1>Emak with anaknya lagi ke pool :) </h1>
+
+<div style="width: 100%; height: 500px; text-align:center">
+    <img [src]="photoUrl" [@photoState]="position" width="500px"
+    (@photoState.start)="logAnimation($event)"
+    (@photoState.done)="logAnimation($event)">
+</div>
+
+<br> 
+<button (click)="changePosition('move')">Move</button>
+<button (click)="changePosition('spin')">Rotate</button>
+<button (click)="changePosition('enlarge')">Scale</button>
+<button (click)="changePosition(null)">Reset</button>
