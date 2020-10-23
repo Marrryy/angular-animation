@@ -1,1 +1,12 @@
-<p>img-animation works!</p>
+<h1>Diliat dari mana aja ganteng cuy :) </h1>
+<h3>Awas jantungan </h3>
+
+<div style="width: 100%; height: 500px; text-align:center">
+    <img [src]="photoUrl" [@photoState]="position" width="500px">
+</div>
+
+<br>
+<button (click)="changePosition('move')">Move</button>
+<button (click)="changePosition('spin')">Rotate</button>
+<button (click)="changePosition('enlarge')">Scale</button>
+<button (click)="changePosition(null)">Reset</button>
