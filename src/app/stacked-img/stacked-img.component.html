@@ -1,1 +1,6 @@
-<p>stacked-img works!</p>
+<div [@stackAnimation]='photos.length'>
+    <div *ngFor="let photo of photos">
+    <img [src]="photo" width="300px">
+
+    </div>
+</div>
